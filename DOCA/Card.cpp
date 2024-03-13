@@ -15,11 +15,12 @@ Card::Card(int face, int suit) {
   this->suit = suit;
 }
 
-/*
+
 void Card::operator=(const Card& c) { 
     this->face = c.face; 
     this->suit = c.suit;
 }
+
 string Card::getCardImage() {
   string cards[4][13];
   string acesCards[13] = {"🂡", "🂢", "🂣", "🂤", "🂥", "🂦", "🂧", "🂨", "🂩", "🂪", "🂫", "🂭", "🂮"};
@@ -48,7 +49,7 @@ string Card::getCardImage() {
   st << "\033[0m";
   return st.str();
 }
-*/
+
 int Card::getFace() {
   return this->face;
 }
