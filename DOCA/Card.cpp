@@ -3,9 +3,7 @@
 #include <sstream>
 using namespace std;
 
-int main() {
-    return 0;
-}
+
 Card::Card() {
   this->face = 1;
   this->suit = 1;
