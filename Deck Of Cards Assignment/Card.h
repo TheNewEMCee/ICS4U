@@ -15,7 +15,7 @@ Card(const Card& other);
 int getFace();
 int getSuit();
 string getCardImage();
-friend ostream& operator << (istream& output, Card& c);
-void operator=(const Card& c);
+//friend ostream& operator << (istream& output, Card& c);
+//void operator=(const Card& c);
 };
 #endif
