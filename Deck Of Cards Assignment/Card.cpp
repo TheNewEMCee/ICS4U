@@ -16,23 +16,23 @@ void Card::operator=(const Card& c) {
     this->face = c.face; 
     this->suit = c.suit;
 }
-string Card::getCardImage() {
+/* string Card::getCardImage() {
   string cards[4][13];
-  string aces[13] = {"🂡", "🂢", "🂣", "🂤", "🂥", "🂦", "🂧", "🂨", "🂩", "🂪", "🂫", "🂭", "🂮"};
-  string diamonds[13] = {"🃁", "🃂", "🃃", "🃄", "🃅", "🃆", "🃇", "🃈", "🃉", "🃊", "🃋", "🃍", "🃎"};
-  string clubs[13] = {"🃑", "🃒", "🃓", "🃔", "🃕", "🃖", "🃗", "🃘", "🃙", "🃚", "🃛", "🃝", "🃞"};
-  string hearts[13] = {"🂱", "🂲", "🂳", "🂴", "🂵", "🂶", "🂷", "🂸", "🂹", "🂺", "🂻", "🂽", "🂾"};
+  string acesCards[13] = {"🂡", "🂢", "🂣", "🂤", "🂥", "🂦", "🂧", "🂨", "🂩", "🂪", "🂫", "🂭", "🂮"};
+  string diamondsCards[13] = {"🃁", "🃂", "🃃", "🃄", "🃅", "🃆", "🃇", "🃈", "🃉", "🃊", "🃋", "🃍", "🃎"};
+  string clubsCards[13] = {"🃑", "🃒", "🃓", "🃔", "🃕", "🃖", "🃗", "🃘", "🃙", "🃚", "🃛", "🃝", "🃞"};
+  string heartsCards[13] = {"🂱", "🂲", "🂳", "🂴", "🂵", "🂶", "🂷", "🂸", "🂹", "🂺", "🂻", "🂽", "🂾"};
   for (int i = 0; i < 13; i++) {
-    cards[0][i] = aces[i];
+    cards[0][i] = acesCards[i];
   }
   for (int i = 0; i < 13; i++) {
-    cards[1][i] = diamonds[i];
+    cards[1][i] = diamondsCards[i];
   }
   for (int i = 0; i < 13; i++) {
-    cards[2][i] = clubs[i];
+    cards[2][i] = clubsCards[i];
   }
   for (int i = 0; i < 13; i++) {
-    cards[3][i] = hearts[i];
+    cards[3][i] = heartsCards[i];
   }
   stringstream st;
   if (this->suit % 2 == 0) {
@@ -44,6 +44,7 @@ string Card::getCardImage() {
   st << "\033[0m";
   return st.str();
 }
+*/
 int Card::getFace() {
   return this->face;
 }
